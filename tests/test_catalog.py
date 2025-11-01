@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Елена")
 @allure.feature("Каталог")
 @allure.story("Акции")
-def test_method():
+def test_catalog_1():
     with allure.step("Откройте страницу каталога во время активной акции"):
         with allure.step("Expected Result"):
             with allure.step("Товары, участвующие в акции, отмечены визуальной меткой («-20%», «Sale», «Акция»)"):
@@ -34,7 +34,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Каталог")
 @allure.story("Акции")
-def test_method():
+def test_catalog_2():
     with allure.step("Найдите товар со скидкой"):
         with allure.step("Expected Result"):
             with allure.step("На карточке товара отображается метка скидки (например, «-20%»)"):
@@ -60,7 +60,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Каталог")
 @allure.story("Навигация")
-def test_method():
+def test_catalog_3():
     with allure.step("Откройте главную страницу интернет-магазина"):
         with allure.step("Expected Result"):
             with allure.step("Главное меню отображается в верхней части страницы"):
@@ -80,7 +80,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Каталог")
 @allure.story("Навигация")
-def test_method():
+def test_catalog_4():
     with allure.step("На странице каталога выберите категорию (например, «Одежда»)"):
         with allure.step("Expected Result"):
             with allure.step("Отображается список товаров выбранной категории"):
@@ -102,7 +102,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Каталог")
 @allure.story("Сортировка")
-def test_method():
+def test_catalog_5():
     with allure.step("Выберите сортировку «По популярности»"):
         with allure.step("Expected Result"):
             with allure.step("Товары сортируются в порядке убывания рейтинга или количества покупок"):
