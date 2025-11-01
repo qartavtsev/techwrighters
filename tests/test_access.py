@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Анна")
 @allure.feature("Регистрация и авторизация")
 @allure.story("Восстановление пароля")
-def test_method():
+def test_access_1():
     with allure.step("На странице входа нажмите ссылку «Забыли пароль?»"):
         with allure.step("Expected Result"):
             with allure.step("Открывается страница восстановления пароля с полем «Email»"):
@@ -36,7 +36,7 @@ def test_method():
 @allure.label("owner", "Анна")
 @allure.feature("Регистрация и авторизация")
 @allure.story("Регистрация")
-def test_method():
+def test_access_2():
     with allure.step("Откройте страницу регистрации интернет-магазина"):
         with allure.step("Expected Result"):
             with allure.step("Форма регистрации отображается с обязательными полями, помеченными индикатором обязательности (например, «*»)"):
