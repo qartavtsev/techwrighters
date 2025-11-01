@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("644")
+@allure.id("644")
 @allure.tag("regress")
 @allure.title("Пересчёт суммы при изменении количества товаров")
 @allure.label("owner", "Иван")
