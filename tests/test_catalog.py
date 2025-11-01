@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("611")
+@allure.id("611")
 @allure.tag("regress")
 @allure.title("Отображение активных акций в каталоге")
 @allure.label("owner", "Елена")
@@ -28,7 +28,7 @@ def test_catalog_1():
             with allure.step("Ошибок округления и несоответствия процентов нет"):
                 pass
 
-#@allure.id("612")
+@allure.id("612")
 @allure.tag("regress")
 @allure.title("Корректность расчёта скидки на товар")
 @allure.label("owner", "Елена")
@@ -54,7 +54,7 @@ def test_catalog_2():
             with allure.step("Никаких расхождений между каталогом и карточкой нет"):
                 pass
 
-#@allure.id("598")
+@allure.id("598")
 @allure.tag("regress")
 @allure.title("Переход из главного меню в раздел каталога")
 @allure.label("owner", "Елена")
@@ -74,7 +74,7 @@ def test_catalog_3():
             with allure.step("Страница каталога отображает список категорий или товаров без ошибок загрузки"):
                 pass
               
-#@allure.id("599")
+@allure.id("599")
 @allure.tag("regress")
 @allure.title("Переход по категориям каталога")
 @allure.label("owner", "Елена")
@@ -96,7 +96,7 @@ def test_catalog_4():
             with allure.step("Ошибок загрузки не возникает"):
                 pass
               
-#@allure.id("609")
+@allure.id("609")
 @allure.tag("regress")
 @allure.title("Сортировка товаров по популярности")
 @allure.label("owner", "Елена")
