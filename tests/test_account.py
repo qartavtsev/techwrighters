@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("584")
+@allure.id("584")
 @allure.tag("regress")
 @allure.title("Отображение списка совершённых заказов")
 @allure.label("owner", "Дмитрий")
@@ -22,7 +22,7 @@ def test_account_1():
             with allure.step("Сообщение: «Вы ещё не совершали заказов»"):
                 pass
 
-#@allure.id("575")
+@allure.id("575")
 @allure.title("Отображение данных профиля")
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
@@ -43,7 +43,7 @@ def test_account_2():
             with allure.step("Кнопки отображаются и активны"):
                 pass
 
-#@allure.id("576")
+@allure.id("576")
 @allure.title("Успешное изменение данных профиля")
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
@@ -68,7 +68,7 @@ def test_account_3():
             with allure.step("Новые данные сохраняются в профиле и отображаются после обновления страницы"):
                 pass
 
-#@allure.id("577")
+@allure.id("577")
 @allure.title("Валидация обязательных полей профиля")
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
@@ -95,7 +95,7 @@ def test_account_4():
             with allure.step("Изменения успешно сохранены, сообщение об ошибке не отображается"):
                 pass
 
-#@allure.id("579")
+@allure.id("579")
 @allure.tag("regress")
 @allure.title("Добавление нового адреса доставки")
 @allure.label("owner", "Дмитрий")
@@ -121,7 +121,7 @@ def test_account_5():
             with allure.step("Новый адрес отображается в списке адресов доставки"):
                 pass
 
-#@allure.id("580")
+@allure.id("580")
 @allure.tag("regress")
 @allure.title("Редактирование существующего адреса доставки")
 @allure.label("owner", "Дмитрий")
