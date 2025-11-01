@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Иван")
 @allure.feature("Корзина")
 @allure.story("Пересчёт итоговой стоимости")
-def test_method():
+def test_cart_1():
     with allure.step("Увеличьте количество товара (например, с 1 до 2)"):
         with allure.step("Expected Result"):
             with allure.step("Общая сумма обновляется и равна цена * 2"):
