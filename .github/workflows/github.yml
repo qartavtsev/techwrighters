@@ -22,28 +22,24 @@ on:
         default: ""                                                     # Default browser
         type: choice
         options:                                                        # Available options
+          - "Safari"
           - "Chrome"
           - "Firefox"
-          - "Safari"
       HOST:
         description: "Specify the environment host"
         required: false
         default: ""                                                     # Default environment host
         type: choice
         options:                                                        # Available options
-          - "demo.qatools.cloud"
-          - "production.qatools.cloud"
-          - "qa.qatools.cloud"
           - "techwriter.qatools.cloud"
           - "testing.qatools.cloud"
-          - "staging.qatools.cloud"
+          - "production.qatools.cloud"
       OS:
         description: "Specify the operating system"
         required: false
         default: ""                                                     # Default operating system
         type: choice
         options:                                                        # Available options
-          - "Linux"
           - "macOS"
           - "Windows"
       VERSION:
