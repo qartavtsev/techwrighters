@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("673")
+@allure.id("673")
 @allure.tag("regress")
 @allure.title("Выбор временного окна доставки")
 @allure.label("owner", "Мария")
@@ -24,7 +24,7 @@ def test_delivery_1():
             with allure.step("Выбранный временной интервал сохраняется и корректно отображается в заказе"):
                 pass
 
-#@allure.id("675")
+@allure.id("675")
 @allure.tag("regress")
 @allure.title("Отображение трекинг-номера заказа")
 @allure.label("owner", "Мария")
@@ -48,7 +48,7 @@ def test_delivery_2():
             with allure.step("Если трекинг-номер ещё не присвоен, отображается сообщение «Трекинг-номер появится после передачи в службу доставки»"):
                 pass
 
-#@allure.id("668")
+@allure.id("668")
 @allure.tag("regress")
 @allure.title("Расчёт стоимости доставки по указанному адресу")
 @allure.label("owner", "Мария")
@@ -72,7 +72,7 @@ def test_delivery_3():
             with allure.step("Итого заказа увеличивается на стоимость доставки"):
                 pass
 
-#@allure.id("669")
+@allure.id("669")
 @allure.tag("regress")
 @allure.title("Применение бесплатной доставки при достижении порога суммы")
 @allure.label("owner", "Мария")
