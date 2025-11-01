@@ -29,7 +29,3 @@ ENV/
 .idea/
 .vscode/
 *.code-workspace
-
-# OS junk / logs
-.DS_Store
-*.log
