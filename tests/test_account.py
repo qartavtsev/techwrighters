@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("История заказов и детализация")
-def test_method():
+def test_account_1():
     with allure.step("Перейдите в раздел «Мои заказы»"):
         with allure.step("Expected Result"):
             with allure.step("Отображается таблица или карточки заказов"):
@@ -27,7 +27,7 @@ def test_method():
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("Просмотр и редактирование профиля")
-def test_method():
+def test_account_2():
     with allure.step("Перейдите в раздел «Профиль»"):
         with allure.step("Expected Result"):
             with allure.step("Открывается страница профиля без ошибок"):
@@ -48,7 +48,7 @@ def test_method():
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("Просмотр и редактирование профиля")
-def test_method():
+def test_account_3():
     with allure.step("Перейдите на страницу «Профиль»"):
         with allure.step("Expected Result"):
             with allure.step("Данные профиля загружены"):
@@ -73,7 +73,7 @@ def test_method():
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("Просмотр и редактирование профиля")
-def test_method():
+def test_account_4():
     with allure.step("Перейдите в режим редактирования профиля"):
         with allure.step("Expected Result"):
             with allure.step("Поля становятся доступными для редактирования"):
@@ -101,7 +101,7 @@ def test_method():
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("Управление адресами доставки")
-def test_method():
+def test_account_5():
     with allure.step("Перейдите в раздел «Мои адреса»"):
         with allure.step("Expected Result"):
             with allure.step("Отображается список сохранённых адресов и кнопка «Добавить адрес»"):
@@ -127,7 +127,7 @@ def test_method():
 @allure.label("owner", "Дмитрий")
 @allure.feature("Личный кабинет")
 @allure.story("Управление адресами доставки")
-def test_method():
+def test_account_6():
     with allure.step("Перейдите в раздел «Мои адреса»"):
         with allure.step("Expected Result"):
             with allure.step("Отображается список адресов с кнопкой «Редактировать» у каждого"):
