@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("637")
+@allure.id("637")
 @allure.tag("regress")
 @allure.title("Добавление товара в избранное")
 @allure.label("owner", "Иван")
@@ -22,7 +22,7 @@ def test_browse_1():
             with allure.step("Все данные (название, цена, фото) отображаются корректно"):
                 pass
 
-#@allure.id("630")
+@allure.id("630")
 @allure.tag("regress", "smoke")
 @allure.title("Отображение подсказок при вводе текста в строке поиска")
 @allure.label("owner", "Иван")
