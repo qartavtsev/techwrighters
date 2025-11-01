@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Иван")
 @allure.feature("Поиск, сравнение и избранное")
 @allure.story("Избранное")
-def test_method():
+def test_browse_1():
     with allure.step("Найдите товар в каталоге и нажмите на иконку «Сердце»"):
         with allure.step("Expected Result"):
             with allure.step("Иконка меняет цвет или состояние (например, становится закрашенной)"):
@@ -28,7 +28,7 @@ def test_method():
 @allure.label("owner", "Иван")
 @allure.feature("Поиск, сравнение и избранное")
 @allure.story("Подсказки и автодополнение")
-def test_method():
+def test_browse_2():
     with allure.step("Начните вводить запрос в строке поиска (например, «тел»)"):
         with allure.step("Expected Result"):
             with allure.step("Под строкой поиска появляется выпадающий список подсказок"):
