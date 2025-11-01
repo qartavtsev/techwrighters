@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("613")
+@allure.id("613")
 @allure.tag("regress")
 @allure.title("Отображение информации о товаре (название, описание, фото, цена)")
 @allure.label("owner", "Елена")
@@ -26,7 +26,7 @@ def test_product_1():
             with allure.step("Нет пустых или некорректных полей"):
                 pass
 
-#@allure.id("614")
+@allure.id("614")
 @allure.tag("regress")
 @allure.title("Переключение изображений в галерее товара")
 @allure.label("owner", "Елена")
@@ -52,7 +52,7 @@ def test_product_2():
             with allure.step("Галерея возвращается к первому фото после последнего (если предусмотрено циклическое переключение)"):
                 pass
 
-#@allure.id("622")
+@allure.id("622")
 @allure.tag("regress")
 @allure.title("Отображение отзывов на товар")
 @allure.label("owner", "Елена")
@@ -78,7 +78,7 @@ def test_product_3():
             with allure.step("Пользователь может перейти к форме «Оставить отзыв» (если доступна)"):
                 pass
               
-#@allure.id("619")
+@allure.id("619")
 @allure.tag("regress")
 @allure.title("Отображение рейтинга товара")
 @allure.label("owner", "Елена")
