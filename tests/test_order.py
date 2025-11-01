@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Мария")
 @allure.feature("Заказ")
 @allure.story("Выбор способа оплаты")
-def test_method():
+def test_order_1():
     with allure.step("Выберите первый способ оплаты (например, «Банковская карта»)"):
         with allure.step("Expected Result"):
             with allure.step("Вариант подсвечивается или отмечается как выбранный"):
@@ -32,7 +32,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Заказ")
 @allure.story("Выбор способа оплаты")
-def test_method():
+def test_order_2():
     with allure.step("На шаге «Оплата» выберите вариант «Оплата при получении»"):
         with allure.step("Expected Result"):
             with allure.step("Способ подсвечен как выбранный"):
@@ -58,7 +58,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Заказ")
 @allure.story("Проверка и подтверждение заказа")
-def test_method():
+def test_order_3():
     with allure.step("Откройте сводку заказа на шаге «Подтверждение»"):
         with allure.step("Expected Result"):
             with allure.step("Отображается список товаров с названием, вариантом (если есть), количеством и ценой за единицу"):
