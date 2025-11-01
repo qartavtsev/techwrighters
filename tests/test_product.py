@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Елена")
 @allure.feature("Товар")
 @allure.story("Карточка товара")
-def test_method():
+def test_product_1():
     with allure.step("Откройте карточку любого товара из каталога"):
         with allure.step("Expected Result"):
             with allure.step("На странице отображаются: название товара, краткое и полное описание, цена, основное фото"):
@@ -32,7 +32,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Товар")
 @allure.story("Карточка товара")
-def test_method():
+def test_product_2():
     with allure.step("Откройте карточку товара с несколькими изображениями"):
         with allure.step("Expected Result"):
             with allure.step("Основное изображение отображается по умолчанию"):
@@ -58,7 +58,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Товар")
 @allure.story("Отзывы")
-def test_method():
+def test_product_3():
     with allure.step("Откройте карточку товара"):
         with allure.step("Expected Result"):
             with allure.step("Отображается блок «Отзывы» или аналогичный"):
@@ -84,7 +84,7 @@ def test_method():
 @allure.label("owner", "Елена")
 @allure.feature("Товар")
 @allure.story("Рейтинг")
-def test_method():
+def test_product_4():
     with allure.step("Откройте каталог товаров"):
         with allure.step("Expected Result"):
             with allure.step("У товаров, у которых есть оценки, отображаются звёзды или числовое значение рейтинга"):
