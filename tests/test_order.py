@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("653")
+@allure.id("653")
 @allure.tag("regress")
 @allure.title("Переключение способа оплаты")
 @allure.label("owner", "Мария")
@@ -26,7 +26,7 @@ def test_order_1():
             with allure.step("Выбранный способ оплаты сохраняется и отображается в сводке заказа"):
                 pass
 
-#@allure.id("654")
+@allure.id("654")
 @allure.tag("regress")
 @allure.title("Выбор оплаты при получении")
 @allure.label("owner", "Мария")
@@ -52,7 +52,7 @@ def test_order_2():
             with allure.step("Пользователь получает подтверждение заказа"):
                 pass
 
-#@allure.id("656")
+@allure.id("656")
 @allure.tag("regress")
 @allure.title("Отображение корректной сводки заказа (товары, цены, доставка, итоги)")
 @allure.label("owner", "Мария")
