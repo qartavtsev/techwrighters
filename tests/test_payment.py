@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Мария")
 @allure.feature("Оплата")
 @allure.story("Возвраты")
-def test_method():
+def test_payment_1():
     with allure.step("Откройте детали заказа и выберите позиции/количество для частичного возврата"):
         with allure.step("Expected Result"):
             with allure.step("Интерфейс позволяет отметить конкретные позиции и их количество"):
@@ -34,7 +34,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Оплата")
 @allure.story("Онлайн-оплата")
-def test_method():
+def test_payment_2():
     with allure.step("На платёжной странице провайдера нажмите «Отмена»"):
         with allure.step("Expected Result"):
             with allure.step("Выполняется редирект на cancel-URL магазина"):
@@ -54,7 +54,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Оплата")
 @allure.story("Онлайн-оплата")
-def test_method():
+def test_payment_3():
     with allure.step("Откройте детали заказа в «Мои заказы» и нажмите «Оплатить»"):
         with allure.step("Expected Result"):
             with allure.step("Выполняется редирект на платёжную страницу (или встраивается виджет)"):
