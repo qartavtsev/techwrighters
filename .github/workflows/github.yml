@@ -89,7 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        # Checkout the code from the repository
+        # Check out the code from the repository
 
       - uses: actions/setup-python@v4
         with:
