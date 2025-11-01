@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("571")
+@allure.id("571")
 @allure.tag("regress", "smoke")
 @allure.title("Успешное восстановление пароля через email")
 @allure.label("owner", "Анна")
@@ -30,7 +30,7 @@ def test_access_1():
             with allure.step("Пользователь перенаправлен на страницу входа и может войти с новым паролем"):
                 pass
 
-#@allure.id("564")
+@allure.id("564")
 @allure.tag("regress")
 @allure.title("Валидация обязательных полей формы регистрации")
 @allure.label("owner", "Анна")
