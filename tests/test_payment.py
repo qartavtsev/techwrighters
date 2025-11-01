@@ -2,7 +2,7 @@ import allure
 import pytest
 
 
-#@allure.id("667")
+@allure.id("667")
 @allure.tag("regress")
 @allure.title("Частичный возврат суммы по отдельным позициям заказа")
 @allure.label("owner", "Мария")
@@ -28,7 +28,7 @@ def test_payment_1():
             with allure.step("Остаток по заказу остаётся «Оплачен» на непрерывнутую часть"):
                 pass
 
-#@allure.id("662")
+@allure.id("662")
 @allure.tag("regress")
 @allure.title("Отмена оплаты пользователем у провайдера и возврат в магазин")
 @allure.label("owner", "Мария")
@@ -48,7 +48,7 @@ def test_payment_2():
             with allure.step("Доступна кнопка «Оплатить позже»/«Повторить оплату»"):
                 pass
 
-#@allure.id("663")
+@allure.id("663")
 @allure.tag("regress")
 @allure.title("Повторная попытка оплаты по созданному заказу")
 @allure.label("owner", "Мария")
