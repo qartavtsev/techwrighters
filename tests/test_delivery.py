@@ -8,7 +8,7 @@ import pytest
 @allure.label("owner", "Мария")
 @allure.feature("Доставка")
 @allure.story("Выбор способа доставки")
-def test_method():
+def test_delivery_1():
     with allure.step("В разделе выбора времени откройте список доступных временных интервалов (например, 10:00–14:00, 14:00–18:00)"):
         with allure.step("Expected Result"):
             with allure.step("Список отображает только актуальные и доступные слоты"):
@@ -30,7 +30,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Доставка")
 @allure.story("Отслеживание статуса доставки")
-def test_method():
+def test_delivery_2():
     with allure.step("Перейдите в раздел «Мои заказы» и откройте детали оформленного заказа"):
         with allure.step("Expected Result"):
             with allure.step("В карточке заказа отображается трекинг-номер (например, «Track №123456789»)"):
@@ -54,7 +54,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Доставка")
 @allure.story("Расчёт стоимости и сроков")
-def test_method():
+def test_delivery_3():
     with allure.step("Введите валидный адрес (город, улица, дом, индекс, регион)"):
         with allure.step("Expected Result"):
             with allure.step("Адрес проходит валидацию без ошибок"):
@@ -78,7 +78,7 @@ def test_method():
 @allure.label("owner", "Мария")
 @allure.feature("Доставка")
 @allure.story("Расчёт стоимости и сроков")
-def test_method():
+def test_delivery_4():
     with allure.step("Проверьте стоимость доставки при текущей сумме (ниже порога)"):
         with allure.step("Expected Result"):
             with allure.step("В итогах отображается положительная стоимость доставки"):
