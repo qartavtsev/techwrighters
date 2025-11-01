@@ -19,9 +19,9 @@ on:
       BROWSER:
         description: "Specify the browser"
         required: false
-        default: ""                                                   # Default browser
+        default: ""                                                     # Default browser
         type: choice
-        options:                                                      # Available options
+        options:                                                        # Available options
           - "Chrome"
           - "Firefox"
           - "Safari"
@@ -34,14 +34,15 @@ on:
           - "demo.qatools.cloud"
           - "production.qatools.cloud"
           - "qa.qatools.cloud"
+          - "techwriter.qatools.cloud"
           - "testing.qatools.cloud"
           - "staging.qatools.cloud"
       OS:
         description: "Specify the operating system"
         required: false
-        default: ""                                                   # Default operating system
+        default: ""                                                     # Default operating system
         type: choice
-        options:                                                      # Available options
+        options:                                                        # Available options
           - "Linux"
           - "macOS"
           - "Windows"
@@ -54,14 +55,14 @@ on:
 env:
   ALLURE_ENDPOINT: "https://demo.qatools.cloud/"                                                # Allure TestOps endpoint URL for submitting test results
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}                               # Allure TestOps job run ID for test results association
-  ALLURE_PROJECT_ID: "55"                                                                      # Allure TestOps project ID for submitting test results
+  ALLURE_PROJECT_ID: "55"                                                                       # Allure TestOps project ID for submitting test results
   ALLURE_RESULTS: "./allure-results"                                                            # Directory where test result files will be stored
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}                                                     # Authentication token for Allure TestOps (secured environment variable)
   ALLURE_LAUNCH_NAME_WITHOUT_TIME: "Python/Pytest - #${{ github.run_number }}"                  # Base Allure TestOps launch name (without timestamp)
   BRANCH: ${{ github.event.inputs.BRANCH }}                                                     # Git branch name specified for test execution
-  BROWSER: ${{ github.event.inputs.BROWSER }}                                                 # Browser specified for test execution
+  BROWSER: ${{ github.event.inputs.BROWSER }}                                                   # Browser specified for test execution
   HOST: ${{ github.event.inputs.HOST }}                                                         # Environment host specified for test execution
-  OS: ${{ github.event.inputs.OS }}                                                           # Operating system specified for test execution
+  OS: ${{ github.event.inputs.OS }}                                                             # Operating system specified for test execution
   VERSION: ${{ github.event.inputs.VERSION }}                                                   # Software version under test specified
 
 # Jobs used in the pipeline
@@ -93,11 +94,14 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+        # Specify the Python version to be installed and used for the workflow
 
       - name: Install and configure Python
         run: |
           python -m pip install --upgrade pip
           pip install allure-pytest pytest
+        # Upgrade pip to the latest version
+        # Install Pytest and required dependencies
 
       - name: Install and configure allurectl using GitHub Actions
         uses: allure-framework/setup-allurectl@v1
@@ -106,10 +110,12 @@ jobs:
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: ${{ env.ALLURE_PROJECT_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+        # Install and configure allurectl using GitHub Actions
 
       - name: Ensure allure-results directory exists
         run: |
           mkdir -p ${ALLURE_RESULTS}
+        # Ensure directory for test results exists
 
       - name: Run tests
         env:
